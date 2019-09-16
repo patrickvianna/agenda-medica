@@ -1,1 +1,1 @@
-agenda-medica
+AgendaConsultorioMedico

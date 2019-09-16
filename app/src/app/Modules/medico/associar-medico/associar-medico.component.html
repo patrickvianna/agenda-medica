@@ -1,0 +1,22 @@
+<div class="container center">
+  <div class="row justify-content-md-center">
+    <div class="form-container col-md-8 ">
+      <h2>Associar médico ao consultório</h2><br/>
+      <form action="">
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="State" aria-label="State" [matAutocomplete]="auto" [formControl]="stateCtrl" name="estado">
+              <mat-autocomplete #auto="matAutocomplete">
+                <mat-option *ngFor="let state of filteredStates | async" [value]="state.name">
+                  <img class="example-option-img" aria-hidden [src]="state.flag" height="25">
+                  <span>{{state.name}}</span> |
+                  <small>Population: {{state.population}}</small>
+                </mat-option>
+              </mat-autocomplete>
+            </mat-form-field>
+
+
+        <button mat-raised-button color="primary" class="full-width" >Cadastrar</button>
+      </form>
+    </div>
+  </div>
+</div>

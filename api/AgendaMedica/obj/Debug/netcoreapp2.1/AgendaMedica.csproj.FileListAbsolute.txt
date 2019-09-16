@@ -1,0 +1,14 @@
+D:\Projetos\AgendaConsultorioMedico\api\AgendaMedica\bin\Debug\netcoreapp2.1\AgendaMedica.deps.json
+D:\Projetos\AgendaConsultorioMedico\api\AgendaMedica\bin\Debug\netcoreapp2.1\AgendaMedica.runtimeconfig.json
+D:\Projetos\AgendaConsultorioMedico\api\AgendaMedica\bin\Debug\netcoreapp2.1\AgendaMedica.runtimeconfig.dev.json
+D:\Projetos\AgendaConsultorioMedico\api\AgendaMedica\bin\Debug\netcoreapp2.1\AgendaMedica.dll
+D:\Projetos\AgendaConsultorioMedico\api\AgendaMedica\bin\Debug\netcoreapp2.1\AgendaMedica.pdb
+D:\Projetos\AgendaConsultorioMedico\api\AgendaMedica\obj\Debug\netcoreapp2.1\AgendaMedica.csprojAssemblyReference.cache
+D:\Projetos\AgendaConsultorioMedico\api\AgendaMedica\obj\Debug\netcoreapp2.1\AgendaMedica.csproj.CoreCompileInputs.cache
+D:\Projetos\AgendaConsultorioMedico\api\AgendaMedica\obj\Debug\netcoreapp2.1\AgendaMedica.RazorAssemblyInfo.cache
+D:\Projetos\AgendaConsultorioMedico\api\AgendaMedica\obj\Debug\netcoreapp2.1\AgendaMedica.RazorAssemblyInfo.cs
+D:\Projetos\AgendaConsultorioMedico\api\AgendaMedica\obj\Debug\netcoreapp2.1\AgendaMedica.AssemblyInfoInputs.cache
+D:\Projetos\AgendaConsultorioMedico\api\AgendaMedica\obj\Debug\netcoreapp2.1\AgendaMedica.AssemblyInfo.cs
+D:\Projetos\AgendaConsultorioMedico\api\AgendaMedica\obj\Debug\netcoreapp2.1\AgendaMedica.RazorTargetAssemblyInfo.cache
+D:\Projetos\AgendaConsultorioMedico\api\AgendaMedica\obj\Debug\netcoreapp2.1\AgendaMedica.dll
+D:\Projetos\AgendaConsultorioMedico\api\AgendaMedica\obj\Debug\netcoreapp2.1\AgendaMedica.pdb

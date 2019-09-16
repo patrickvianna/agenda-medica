@@ -1,0 +1,38 @@
+<div class="container center">
+  <div class="row justify-content-md-center">
+    <div class="form-container col-md-8 ">
+      <h2>Cadastrar consulta</h2><br />
+      <form action="">
+        <mat-form-field class="full-width">
+          <input matInput [(ngModel)]="consulta.horaInicio" [disabled]="true" name="consultoroConsulta"
+            placeholder="Consultório">
+        </mat-form-field>
+        <div class="row">
+          <div class="col-md-4">
+            <mat-form-field class="full-width">
+              <input matInput [(ngModel)]="consulta.horaInicio" type="time" name="horaConsulta"
+                placeholder="Hora início">
+            </mat-form-field>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <mat-form-field class="full-width">
+                <input matInput [(ngModel)]="consulta.horaFim" type="time" name="horaConsulta" placeholder="Hora Fim">
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+
+        
+
+        <br />
+        <mat-divider></mat-divider><br />
+       
+        <button mat-raised-button color="primary" class="full-width" (click)="cadastrarConsulta()">Cadastrar</button>
+      </form>
+    </div>
+  </div>
+</div>

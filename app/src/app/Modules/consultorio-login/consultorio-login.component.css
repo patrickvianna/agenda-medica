@@ -1,0 +1,13 @@
+.center {
+  margin-top: 10%;
+}
+
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+  opacity: 0.9;
+}
+
+.jumbotron > * {
+  width: 100%;
+}

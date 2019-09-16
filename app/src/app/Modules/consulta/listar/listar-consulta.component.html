@@ -1,0 +1,49 @@
+<div class="container center" >
+  <div class="row justify-content-md-center">
+    <table mat-table [dataSource]="consultas" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="data">
+      <th mat-header-cell *matHeaderCellDef> <h5><b>Data</b></h5> </th>
+      <td mat-cell *matCellDef="let element"> {{element.data | date:'short'}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="horario">
+      <th mat-header-cell *matHeaderCellDef> <h5><b> Horário </b></h5> </th>
+      <td mat-cell *matCellDef="let element"> {{element.horario }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="medico">
+      <th mat-header-cell *matHeaderCellDef> <h5><b> Médico </b></h5> </th>
+      <td mat-cell *matCellDef="let element"> {{ (element.medico == null ? '' : element.medico.nome) }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="paciente">
+      <th mat-header-cell *matHeaderCellDef> <h5><b> Paciente </b></h5> </th>
+      <td mat-cell *matCellDef="let element"> {{ (element.paciente == null ? '' : element.paciente.nome) }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="situacao">
+      <th mat-header-cell *matHeaderCellDef> <h5><b> Situação </b></h5> </th>
+      <td mat-cell *matCellDef="let element"> {{ getSituacao(element.situacao) }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="acoes">
+      <th mat-header-cell *matHeaderCellDef> <h5><b> Ações </b></h5> </th>
+      <td mat-cell *matCellDef="let element"> 
+        <button class="btn btn-sm btn-success" *ngIf="element.situacao === 0"  (click)="updateSituacao(element, 1)"> Realizar </button>
+        <button class="btn btn-sm btn-danger" *ngIf="element.situacao === 0" style="margin-left: 5px" (click)="updateSituacao(element, 2)"> Cancelar </button>
+
+        <button class="btn btn-sm btn-default" *ngIf="element.situacao !== 0"> Realizar </button>
+        <button class="btn btn-sm btn-default" *ngIf="element.situacao !== 0" style="margin-left: 5px"> Cancelar </button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  
+    <button class="floating-button" aria-label="Favorite" (click)="carregarconsultas()">
+      <i class="material-icons" style="font-size: 40px"> refresh </i>
+    </button>
+  </div>
+</div>

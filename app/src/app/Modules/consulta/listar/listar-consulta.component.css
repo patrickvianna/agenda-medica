@@ -1,0 +1,21 @@
+table {
+  width: 100%;
+  opacity: 0.9;
+  margin-top: 5%
+}
+
+.floating-button {
+  position: fixed;
+  border: none;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  background-color: #3f51b5;
+  color: white;
+  bottom: 30px;
+  right: 30px;
+}
+
+.floating-button:hover {
+  background-color: #253175;
+}
